@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Striver DSA Sheet Tracker</title>
+    <title>Vamsi DSA Sheet Tracker</title>
     <style>
         * {
             margin: 0;
@@ -322,7 +322,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🚀 Striver DSA Sheet Tracker</h1>
+            <h1>🚀 Vamsi DSA Sheet Tracker</h1>
             <p>180 Problems • 45 Days Challenge • 4 Hours Daily</p>
         </div>
 
@@ -410,7 +410,7 @@
     </div>
 
     <script>
-        // Complete Striver DSA problems data (all 180 problems)
+        // Complete Vamsi DSA problems data (all 180 problems)
         const problems = [
             // Day 1: Arrays Part 1
             { id: 1, day: "Day 1", name: "Set Matrix Zeroes", topic: "Array", pattern: "Matrix Manipulation", time: "30 min", difficulty: "medium", week: "Week 1", link: "https://takeuforward.org/data-structure/set-matrix-zero/" },
@@ -589,7 +589,7 @@
 
         // Load saved progress from localStorage
         function loadSavedProgress() {
-            const savedProgress = localStorage.getItem('striverDsaProgress');
+            const savedProgress = localStorage.getItem('VamsiDsaProgress');
             if (savedProgress) {
                 try {
                     const progressData = JSON.parse(savedProgress);
@@ -613,7 +613,7 @@
                 reflections: window.problemReflections || {},
                 lastUpdated: new Date().toISOString()
             };
-            localStorage.setItem('striverDsaProgress', JSON.stringify(progressData));
+            localStorage.setItem('VamsiDsaProgress', JSON.stringify(progressData));
         }
 
         // Initialize reflections object
@@ -802,7 +802,7 @@
             if (confirm('Are you sure you want to reset all progress? This cannot be undone.')) {
                 completedProblems.clear();
                 window.problemReflections = {};
-                localStorage.removeItem('striverDsaProgress');
+                localStorage.removeItem('VamsiDsaProgress');
                 renderProblems();
                 updateStats();
             }
